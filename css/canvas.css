@@ -20,7 +20,7 @@ h1 {
 }
 
 .palette {
-  width: 300px;
+  min-width: 300px;
   padding: 0px;
   list-style-type: none;
   margin: auto;
@@ -36,27 +36,10 @@ h1 {
   cursor: pointer;
 }
 
-.red {
-  height: 60px;
-  width: 60px;
+.swatch {
+  width: 20px;
+  height: 20px;
   float: left;
-  margin-right: 60px;
-  background: #f00;
-}
-
-.cornflowerblue {
-  height: 60px;
-  width: 60px;
-  float: left;
-  margin-right: 60px;
-  background: cornflowerblue;
-}
-
-.forestgreen {
-  height: 60px;
-  width: 60px;
-  float: left;
-  background: forestgreen;
 }
 
 .cell {
