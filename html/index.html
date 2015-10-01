@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pixels</title>
+    <link rel="stylesheet" href="../css/canvas.css">
+    <header>
+      <h1>Pixels</h1>
+    </header>
+  </head>
+  <body>
+    <div class="container">
+      <div class="canvas"></div>
+
+      <ul class="palette">
+        <li class="red swatch"></li>
+        <li class="cornflowerblue swatch"></li>
+        <li class="forestgreen swatch"></li>
+      </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../canvas.js"></script>
+    <script type="text/javascript" src="../js/canvas-view.js"></script>
+
+    <script>
+      // var dimensions = prompt("Please enter width and height (50, 50)").split(", ");
+      var selectedOpts = {
+        width: 400,
+        height: 300,
+        cellBackgroundColor: "#ccc"
+      };
+
+      var newCanvas = new Pixels.Board(selectedOpts);
+      var $canvas = $(".canvas");
+      var $palete = $(".palette");
+      var newCanvasView = new Pixels.View(newCanvas, $canvas, $palete)
+    </script>
+  </body>
+</html>
