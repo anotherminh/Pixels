@@ -43,7 +43,7 @@ h1 {
 }
 
 .cell {
-  border: 1px solid black;
+  border: 1px dotted grey;
   width: 10px;
   height: 10px;
   padding: 0px;
